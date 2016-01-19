@@ -1,8 +1,10 @@
-# Python testing 
+# Testing your Python Code
 
-Notes adapted from: http://katyhuff.github.io/python-testing/04-units.html
-Further reading: http://pythontesting.net/framework/nose/nose-introduction/
-Material: http://katyhuff.github.io/python-testing/index.html
+Notes adapted from: [http://katyhuff.github.io/python-testing/04-units.html](http://katyhuff.github.io/python-testing/04-units.html)
+
+Further reading: [http://pythontesting.net/framework/nose/nose-introduction/](http://pythontesting.net/framework/nose/nose-introduction/)
+
+Material: [http://katyhuff.github.io/python-testing/index.html](http://katyhuff.github.io/python-testing/index.html)
 
 Unit tests are essentially functions which compare observed and expected values e.g.
 
@@ -43,7 +45,7 @@ Assuming you have github, adding your code each day, you can sync this with Trav
 	- go to your profile
 	- **tick** which repo you want to watch
 
-[2] You need another file in your repo to instruct travis what to do each time you commit something - call this ".travis.yml" - here you'll tell travis what language and version you want it to deal with for a given repo that it is watching - the syntax is key here (check it [here](http://lint.travis-ci.org/)! e.g.
+[2] You need another file in your repo to instruct travis what to do each time you commit something - call this ".travis.yml" - here you'll tell travis what language and version you want it to deal with for a given repo that it is watching - the syntax is key here (check it [here](http://lint.travis-ci.org/))! e.g.
 
 	language: python
 	python:
