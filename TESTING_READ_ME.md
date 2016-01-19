@@ -38,28 +38,30 @@ For starters, in such a situation you need version control for reasons including
 
 Assuming you have github, adding your code each day, you can sync this with Travis which can then run your tests automatically, emailing you the test results.
 
-#1 Go to [https://travis-ci.org](https://travis-ci.org) 
+[1] Go to [https://travis-ci.org](https://travis-ci.org) 
 	- can sign in with github
 	- go to your profile
 	- **tick** which repo you want to watch
 
-#2 You need another file in your repo to instruct travis what to do each time you commit something - call this ".travis.yml" - here you'll tell travis what language and version you want it to deal with for a given repo that it is watching e.g.
-
-	.travis.yml
+[2] You need another file in your repo to instruct travis what to do each time you commit something - call this ".travis.yml" - here you'll tell travis what language and version you want it to deal with for a given repo that it is watching - the syntax is key here (check it [here](http://lint.travis-ci.org/)! e.g.
 
 	language: python
 	python:
-	    - "2.7"
-	    - "nightly"
+	  - "3.4"
+	  - "nightly"
 	install:
-	    - "pip install -r requirements.txt"
+	  - "pip install -r requirements.txt"
 	script: nosetests
 
-#3 Another file is also required to tell travis what needs to be installed to run your tests e.g.
+	NB/ If you have scripts in a subdirectory within a git repo this file must be in the root folder
 
-	requirements.txt
+[3] Another file (call it *requirements.txt*) is also required to tell travis what needs to be installed to run your tests e.g.
 
-	    nose
-	    numpy
+    nose
+    numpy
 
-#4 Add, commit and push your .travis.yml and requirments.txt files to the github repo you have asked travis to watch
+	NB/ If you have scripts in a subdirectory within a git repo this file must be in the root folder
+
+[4] Add, commit and push your .travis.yml and requirments.txt files to the github repo you have asked travis to watch
+
+[5] Go back to [https://travis-ci.org](https://travis-ci.org) again - if you are on your profile page (click your name in the top right hand corner) go down to the repo you asked travis to watch and click on the cog symbol - this will tell you if it worked or failed or if tehre are any associated errors - now you can fix them!
