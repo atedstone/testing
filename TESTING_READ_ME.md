@@ -70,3 +70,5 @@ NB/ If you have scripts in a subdirectory within a git repo this file must be in
 [4] Add, commit and push your .travis.yml and requirments.txt files to the github repo you have asked travis to watch
 
 [5] Go back to [https://travis-ci.org](https://travis-ci.org) again - if you are on your profile page (click your name in the top right hand corner) go down to the repo you asked travis to watch and click on the cog symbol - this will tell you if it worked or failed or if tehre are any associated errors - now you can fix them!
+
+What happens when I add a line?
